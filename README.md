@@ -33,12 +33,13 @@ Vitrine digital desenvolvida para o estúdio **Cris Nails**, criada para apresen
 
 ## Estrutura de Pastas
 
+```
 cris-nails/
 ├── assets/
 │   ├── img/                                  # Fotos do estúdio e dos trabalhos realizados
 │   └── styles.css                            # Folha de estilos principal (layout responsivo e carrossel mobile)
 ├── config/
-│   └── db.php                                # Conexão segura com o banco de dados MySQL 
+│   └── db.php                                # Conexão segura com o banco de dados MySQL
 ├── Database/
 │   └── Cris-nails.sql                        # Script SQL de criação do banco e das tabelas (categorias e fotos)
 ├── Documentação/
@@ -46,10 +47,10 @@ cris-nails/
 ├── Protótipos/
 │   ├── Diagrama de caso de uso.jpeg          # Diagrama UML de casos de uso do sistema
 │   ├── Diagrama de classe.jpeg               # Diagrama de classes da aplicação
-│   ├── Fluxograma.drawio                     # Fluxograma de navegação 
+│   ├── Fluxograma.drawio                     # Fluxograma de navegação
 │   ├── Mapa do site.drawio                   # Arquitetura das seções do site
 │   └── Protótipo.png                         # Protótipo visual do sistema
 ├── index.php                                 # Página principal
-├── portfolio.php                             # Galeria dinâmica filtrada por categoria 
+├── portfolio.php                             # Galeria dinâmica filtrada por categoria
 └── README.md                                 # Apresentação do projeto, tecnologias e instruções de execução
-
+```
