@@ -1,0 +1,26 @@
+CREATE DATABASE IF NOT EXISTS cris_nails
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE cris_nails;
+
+DROP TABLE IF EXISTS contatos;
+
+CREATE TABLE IF NOT EXISTS categorias (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    slug VARCHAR(60) NOT NULL UNIQUE,
+    titulo VARCHAR(100) NOT NULL,
+    subtitulo VARCHAR(200) NOT NULL,
+    imagem_capa VARCHAR(255) NOT NULL
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS fotos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    categoria_id INT NOT NULL,
+    caminho_imagem VARCHAR(255) NOT NULL,
+    legenda VARCHAR(150) DEFAULT NULL,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (categoria_id) REFERENCES categorias(id) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+show tables;
